@@ -1,0 +1,37 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class calculador{
+public static void main(String [] args){
+        
+        Scanner scanner = new Scanner (System.in);
+
+double soma;
+double sub;
+double div;
+double mult;
+
+System.out.print("Digite o primeiro numero:"); 
+Double valor1 = scanner.nextDouble();
+System.out.print("Digite o segundo  numero:");
+Double valor2 = scanner.nextDouble();
+System.out.print("Digite o operador matematico +, -, *, / :");
+char operador = scanner.next().charAt(0);
+
+ if (operador == '+'){
+    soma = valor1 + valor2;
+    System.out.println("O valor da soma: " +soma);
+}else if (operador == '-'){
+    sub = valor1 - valor2;
+    System.out.println("O valor da subtracao: " +sub);
+}else if (operador == '*'){
+    mult = valor1 * valor2;
+    System.out.println("O valor da multiplicacao: " +mult);
+}else if (operador == '/'){
+    div = valor1 / valor2;
+    System.out.println("O valor da divisao: " +div);
+}else {
+    System.out.println("formato invalido");
+}
+}
+}
